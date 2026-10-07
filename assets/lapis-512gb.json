@@ -1,0 +1,215 @@
+{
+  "disk_bytes": 512110190592,
+  "partitions": [
+    {
+      "index": 1,
+      "name": "userdata",
+      "start_lba": 26476544,
+      "size": 498419965440,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 2,
+      "name": "KERN-A",
+      "start_lba": 409600,
+      "size": 33554432,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 3,
+      "name": "super",
+      "start_lba": 475136,
+      "size": 12884901888,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 4,
+      "name": "KERN-B",
+      "start_lba": 25640960,
+      "size": 512,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 5,
+      "name": "ROOT-B",
+      "start_lba": 25640961,
+      "size": 512,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 6,
+      "name": "KERN-C",
+      "start_lba": 266240,
+      "size": 512,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 7,
+      "name": "ROOT-C",
+      "start_lba": 266241,
+      "size": 512,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 8,
+      "name": "OEM",
+      "start_lba": 270336,
+      "size": 4194304,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 9,
+      "name": "ota_recovery_a",
+      "start_lba": 4096,
+      "size": 134217728,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 10,
+      "name": "ota_recovery_b",
+      "start_lba": 999953039,
+      "size": 134217728,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 12,
+      "name": "EFI-SYSTEM",
+      "start_lba": 278528,
+      "size": 67108864,
+      "type_guid": "c12a7328-f81f-11d2-ba4b-00a0c93ec93b"
+    },
+    {
+      "index": 13,
+      "name": "boot_a",
+      "start_lba": 25645056,
+      "size": 67108864,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 14,
+      "name": "boot_b",
+      "start_lba": 25776128,
+      "size": 67108864,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 15,
+      "name": "vbmeta_a",
+      "start_lba": 25907200,
+      "size": 4194304,
+      "type_guid": "88434509-d9d1-487d-b82c-15ef964cbd4b"
+    },
+    {
+      "index": 16,
+      "name": "vbmeta_b",
+      "start_lba": 25915392,
+      "size": 4194304,
+      "type_guid": "88434509-d9d1-487d-b82c-15ef964cbd4b"
+    },
+    {
+      "index": 17,
+      "name": "metadata",
+      "start_lba": 25923584,
+      "size": 67108864,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 18,
+      "name": "init_boot_a",
+      "start_lba": 26054656,
+      "size": 8388608,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 19,
+      "name": "init_boot_b",
+      "start_lba": 26071040,
+      "size": 8388608,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 20,
+      "name": "vendor_boot_a",
+      "start_lba": 26087424,
+      "size": 33554432,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 21,
+      "name": "vendor_boot_b",
+      "start_lba": 26152960,
+      "size": 33554432,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 22,
+      "name": "pvmfw_a",
+      "start_lba": 26218496,
+      "size": 4194304,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 23,
+      "name": "pvmfw_b",
+      "start_lba": 26226688,
+      "size": 4194304,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 24,
+      "name": "misc",
+      "start_lba": 26234880,
+      "size": 4194304,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 25,
+      "name": "RWFW-A",
+      "start_lba": 266242,
+      "size": 512,
+      "type_guid": "cab6e88e-abf3-4102-a07a-d4bb9be3c1d3"
+    },
+    {
+      "index": 26,
+      "name": "RWFW-B",
+      "start_lba": 266243,
+      "size": 512,
+      "type_guid": "cab6e88e-abf3-4102-a07a-d4bb9be3c1d3"
+    },
+    {
+      "index": 27,
+      "name": "recovery_a",
+      "start_lba": 26243072,
+      "size": 33554432,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 28,
+      "name": "recovery_b",
+      "start_lba": 26308608,
+      "size": 33554432,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 29,
+      "name": "desktop_security_persist",
+      "start_lba": 26374144,
+      "size": 16777216,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 30,
+      "name": "desktop_security_storage",
+      "start_lba": 26406912,
+      "size": 33554432,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    },
+    {
+      "index": 31,
+      "name": "frp_persist",
+      "start_lba": 26472448,
+      "size": 2097152,
+      "type_guid": "0fc63daf-8483-4772-8e79-3d69d8477de4"
+    }
+  ]
+}

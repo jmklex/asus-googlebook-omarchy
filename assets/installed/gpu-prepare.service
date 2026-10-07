@@ -1,0 +1,16 @@
+[Unit]
+Description=Prepare ASUS Lapis graphics using the verified driver sequence
+Wants=systemd-udev-settle.service
+After=systemd-udev-settle.service local-fs.target NetworkManager.service sshd.service
+Before=sddm.service display-manager.service
+ConditionPathExists=/etc/asus-boot/install.json
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+TimeoutStartSec=90
+ExecStart=/usr/local/libexec/asus-gpu-prepare
+ExecStartPost=-/usr/bin/modprobe snd_sof_pci_intel_ptl
+
+[Install]
+WantedBy=graphical.target

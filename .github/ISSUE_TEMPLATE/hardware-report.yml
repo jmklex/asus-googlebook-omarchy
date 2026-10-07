@@ -1,0 +1,30 @@
+name: Hardware test report
+description: Report a live or installed test without sharing private device data.
+body:
+  - type: markdown
+    attributes:
+      value: "Remove serials, UUIDs, network names/addresses, credentials and private backups. A loader test is not a physical boot test."
+  - type: input
+    id: hardware
+    attributes:
+      label: Exact SKU, storage capacity and firmware version
+    validations:
+      required: true
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Stage
+      options:
+        - Image build or loader check
+        - Physical live USB
+        - Native installation
+        - Installed boot or maintenance
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Commands, visible result, and sanitized error
+      description: Include repository commit, successful prerequisites, and whether this was a restart or cold boot.
+    validations:
+      required: true

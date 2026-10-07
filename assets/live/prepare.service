@@ -1,0 +1,14 @@
+[Unit]
+Description=Prepare ASUS Lapis live desktop in RAM
+Wants=pacman-init.service
+After=pacman-init.service systemd-user-sessions.service systemd-modules-load.service
+ConditionKernelCommandLine=asus.live_desktop=1
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+TimeoutStartSec=240
+ExecStart=/usr/bin/python3 /opt/asus-googlebook-omarchy/assets/live/bootstrap.py
+
+[Install]
+WantedBy=multi-user.target

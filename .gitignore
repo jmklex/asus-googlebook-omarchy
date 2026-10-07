@@ -1,0 +1,26 @@
+# Build products, disk contents and per-device data must never enter Git.
+/build/
+/downloads/
+/vendor/
+/state/
+/backups/
+/private/
+*.img
+*.iso
+*.qcow2
+*.bin
+*.zip
+*.tar*
+*.cpio
+*.pem
+*.key
+*.psk
+*.nmconnection
+*authorized_keys*
+*known_hosts*
+*ssh_host*
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
