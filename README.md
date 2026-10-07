@@ -47,4 +47,12 @@ Builds download pinned public source dependencies. No disk passwords, Wi-Fi prof
 
 Report the exact SKU, firmware version, storage capacity, stage and visible result using the issue templates. Keep serial numbers, network names, addresses, disk UUIDs, passwords and backups out of issues. New capacity/layout support needs actual device evidence and recovery testing; do not remove the guards to force an install. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Original code is MIT licensed; the ChromiumOS-derived test harness keeps its BSD license. See [NOTICE.md](NOTICE.md). [Validation record](docs/validation.md) separates physical evidence from repository checks.
+[Validation record](docs/validation.md) separates physical evidence from repository checks.
+
+## License and attribution
+
+The original project code and documentation use the [MIT License](LICENSE). You may use, modify and redistribute them, including commercially. Keep the copyright and license notice in copies or substantial portions.
+
+Suggested credit: **Jonathan Kleiman — [Omarchy on ASUS Googlebook](https://github.com/jonathankleiman/asus-googlebook-omarchy)**. No additional permission or payment is required. This suggested wording adds no conditions to MIT.
+
+The ChromiumOS-derived test harness and other upstream components retain their own licenses and attribution; see [NOTICE.md](NOTICE.md).
