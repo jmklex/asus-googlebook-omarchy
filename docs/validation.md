@@ -6,6 +6,8 @@ On 7 October 2026, one 512 GB ASUS CX9406CAA / Google Lapis completed the origin
 
 The working live USB also passed a restart and cold-start graphics test. Before internal installation, the Android loader accepted the native candidate, a disposable encrypted-root QEMU fixture reached its init program, and each committed disk region passed read-back. Original logs and disk backups remain private; they are not included here.
 
+A subsequent display test on the BOE NB140B91-M04 panel verified 2880×1800 at 120 Hz in both Hyprland and the kernel's active display state. With AirPlay disconnected, the owner confirmed a steady image between the brief flashes at the beginning and end of an approximately 18-second test. The before/during/after kernel captures contained no new messages. The desktop setting was then saved at 120 Hz, scale 2; configuration checks passed and the owner confirmed steady scrolling and window movement. A 60 Hz configuration backup was retained. The existing Xe/Aquamarine workarounds were unchanged; VRR remained disabled. This was a session test, not a 120 Hz reboot, suspend or AirPlay test.
+
 ## Public repository checks
 
 The generalized source toolkit is tested separately from that original installation:

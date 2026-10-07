@@ -6,7 +6,7 @@ Evidence date: 7 October 2026. **One physical laptop**, ASUS Googlebook 14 CX940
 | --- | --- |
 | Internal boot, USB removed | Full encrypted-root Omarchy boot and subsequent reboot passed |
 | Live USB cold start | Desktop recovered with the checked Xe unload/reload sequence |
-| Internal display | 2880×1800 at 60 Hz, scale 2; desktop visually checked |
+| Internal display | BOE NB140B91-M04, 2880×1800, scale 2; 60 Hz and 120 Hz desktop visually checked |
 | Hardware rendering | Mesa shader and pixel-readback test passed |
 | Keyboard and touchpad | Used interactively |
 | Wi-Fi and DNS | Connected, resolved names and reached external services |
@@ -16,13 +16,15 @@ Evidence date: 7 October 2026. **One physical laptop**, ASUS Googlebook 14 CX940
 | Microphone, headphones, Bluetooth audio | Not physically tested |
 | Camera, external displays, suspend/resume | Not tested |
 | Battery life / thermal tuning | Not validated |
-| 120 Hz | Owner reports flicker; investigation open. Use the tested 60 Hz mode. |
+| 120 Hz | Active mode verified; owner confirmed steady image during timed testing and subsequent scrolling/window movement with AirPlay disconnected. Brief flashes occurred at refresh-rate changes. Installer default remains 60 Hz. |
 | Full Omarchy upgrade | Not performed; kernel is pinned and guarded |
 | Factory restore | Recovery USB created and read back; actual restore not exercised |
 | Other capacity, SKU, firmware | Unsupported until independently validated |
 | Fresh public-script installation | Not yet physically completed; original manual/staged procedure is the hardware evidence |
 
 The similar-looking ASUS ExpertBook B9406CAA is a different firmware platform. Its Linux audio research was useful, but neither its BIOS nor its patcher is used here. Other Googlebook brands are outside scope.
+
+The 120 Hz check used the existing display workarounds, VRR disabled and an XRGB8888 compositor buffer. It produced no new kernel log messages during the timed switch test. This establishes operation during the observed desktop session, not 120 Hz cold-boot, suspend/resume or AirPlay compatibility. See [maintenance.md](maintenance.md#refresh-rate) for the setting and 60 Hz fallback.
 
 The native profile intentionally compares all partition labels, offsets, sizes and types. Device-specific disk and partition UUIDs are discovered locally. A 1 TB machine, modified factory layout, changed active slot or previously installed machine should refuse the fresh-install path. Do not make a failing check pass by changing identifiers.
 

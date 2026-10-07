@@ -20,6 +20,18 @@ From a text console, inspect `journalctl -b -u asus-gpu-prepare.service` (instal
 
 Do not run the reload routine inside an active desktop. A failed prerequisite should be investigated from the live USB, not bypassed. Kernel/firmware updates may eventually replace this workaround, but they require new hardware tests.
 
+## Refresh rate
+
+The installer defaults to 2880×1800 at 60 Hz, scale 2. The tested BOE NB140B91-M04 panel also ran steadily at 120 Hz with AirPlay disconnected. A brief blank or flash at the moment of switching occurred in the observed test; the image stayed steady between changes. Repeated flashing while the mode stays unchanged was not reproduced in that test.
+
+To use the tested 120 Hz setting, first back up `~/.config/hypr/monitors.lua`, then change only the internal panel rule to:
+
+```lua
+hl.monitor({ output = "eDP-1", mode = "2880x1800@120", position = "0x0", scale = 2 })
+```
+
+Keep the other monitor rules and environment settings. Check `hyprctl monitors` and `hyprctl configerrors` after reloading. Change `@120` back to `@60` in that rule to restore the installer default. No kernel change or Xe reload is needed for this setting. AirPlay, cold boot and suspend/resume at 120 Hz remain unverified.
+
 ## Audio
 
 The tested audio subsystem is ASUS `1043:15e4`. For the ISO's SOF topology, `snd_soc_sof_sdw quirk=0x288000` and `snd_sof_intel_hda_generic dmic_num=0` avoid two nonexistent PCH microphone links shifting all later backend IDs. The real CS42L43 SoundWire microphone path remains described, but microphone capture is untested.
